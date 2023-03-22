@@ -2,7 +2,6 @@ services:
   - type: web
   name: backend
   env: python
-  buildCommand: "./build.sh"        # ensure it's a string
   startCommand: gunicorn server.wsgi:application
   envVars:
   - key: SECRET_KEY
