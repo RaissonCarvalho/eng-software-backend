@@ -5,5 +5,5 @@ services:
   buildCommand: "./build.sh"        # ensure it's a string
   startCommand: gunicorn server.wsgi:application
   envVars:
-  - key: DJANGO_SECRET_KEY
+  - key: SECRET_KEY
     generateValue: true
